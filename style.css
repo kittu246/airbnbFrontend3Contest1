@@ -96,10 +96,12 @@ justify-content: space-evenly;
     font-size: 12px;
     font-weight: 700;
 }
-.search>div>p:nth-child(2){
+.search>div>input{
     color: rgba(107, 114, 128, 1);
     font-size: 14px;
     font-weight: 400;
+    border: none;
+    padding: 2px 1px;
 
 }
 
@@ -313,6 +315,225 @@ box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
 
 
 
+.searchHeaderSection{
+    background-color: #fff;
+    color: rgb(9, 9, 9);
+}
+
+.searchNav>.search{
+    height:48px;
+    width:60%;
+    border-radius: 1000px;
+ border: 1px solid #E5E7EB;
+background: var(--white, #FFF);
+    box-shadow: 0px 4px 6px 0px rgba(31, 41, 55, 0.10), 0px 2px 4px 0px rgba(31, 41, 55, 0.06);
+    
+}
+.searchNav>.rightNav>.user{
+    border: 1px solid var(--gray-200, #E5E7EB);
+
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.options>button{
+    border: 1px solid #E5E7EB;
+    height:36px;
+    width:fit-content;
+    padding: 4px 14px;
+    background-color: #FFF;
+    border-radius: 15px;
+
+}
+.withIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchedSection{
+    display: flex;
+    gap:1rem;
+
+}
+.searchedRoom{
+
+    flex:1.3;
+    
+}
+
+/* #searchedRoomPart{
+
+    display: flex;
+    gap:3rem;
+} */
+
+#map{
+    
+    flex:1;
+    
+    
+    
+    
+    
+}
+
+
+.roomCard{
+    display:flex;
+    gap:.5rem;
+    height:40vh;
+    flex:1.3;
+}
+
+
+
+#roomCardImage{
+
+    flex:0.7;
+    
+    
+}
+#roomCardImage>img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.roomCardInfo{
+    flex:1;
+    padding: 1rem 0;
+
+}
+
+.CardHeading{
+    display:flex;
+    justify-content: space-between;
+    color: #6B7280;
+    margin-bottom: 10px;
+}
+
+.roomCardInfo>h2{
+    color:#2e323a
+}
+
+.anemities{
+    margin: 1.5rem 0;
+}
+.anemities>ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    color:#6B7280
+}
+
+.horizontalLine{
+
+    height:1px;
+    background-color: #c1c5cd;
+    width:10%;
+    margin: 2rem 0;
+
+}
+
+#ratingSection{
+
+    display:flex;
+    justify-content: space-between;
+    /* margin-top: 3.5rem; */
+    align-items: center;
+}
+
+#leftRatingSection{
+
+    display:flex;
+    gap:8px;
+    
+}
+
+.costButton,.closeModalButton,#locationButton{
+    padding:3px 4px;
+    height:2.5rem;
+    width:auto;
+    border:none;
+    background-color: #de3151;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 3px;
+}
+
+.locationButton{
+    text-align: right;
+    margin-top: 10px;
+}
+
+#locationButton{
+    width:140px;
+}
+
+
+
+
+
+.outerHorizontalLine{
+
+    height:2px;
+    background-color: #aeb5c3;
+    width:100%;
+    margin: 5rem 0;
+}
+
+/* modal styling */
+
+.modalParent{
+    position:fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0, 0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modalBody{
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: space-between;
+    background-color:white;
+    height:200px;
+    width:300px;
+    padding:20px;
+    border:solid 3px #bc1a6e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
+
+}
+
+.modalInfo{
+
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -405,7 +626,46 @@ tbody{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
+
+    .search{
+        
+        height: auto;
+        flex:flex;
+       flex-direction: column;
+        width:63vw;
+        border-radius: 0%;
+        align-items: flex-start;
+    }
+    
+    #searchButton{
+        align-self: flex-end;
+    }
+
+    #map{
+        display: none;
+    }
+
+    .middleSearchPage{
+        display: none;
+    }
+
+    .non-location{
+        display:none;
+    }
 
    
     .midNav{

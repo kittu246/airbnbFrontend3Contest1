@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+
+    <div class="searchPage">
+      
+
+        <div class="searchHeaderSection">
+          <nav class="abnMain searchNav">
+            <img src="./asset/pinkLogo.png" />
+  
+            <div class="search  middleSearchPage">
+              <div id="City">
+                
+                <!-- <input type="text" placeholder="Where are you going?" /> -->
+               
+                
+              </div>
+              <div class="verticalLine"></div>
+              <div id="checkIn" ></div>
+              
+              <div id="checkOut" ></div>
+              <div>
+                
+                <!-- <input type="text" placeholder="Add dates" /> -->
+              </div>
+              <div class="verticalLine"></div>
+              <div id="Guest" ></div>
+              <div>
+                
+                <!-- <input type="text" placeholder="Add guests" /> -->
+              </div>
+    
+              <div>
+                <img src="./asset/Icon Button Base.png" />
+              </div>
+            </div>
+  
+            <div class="rightNav">
+              <p>Become a Host</p>
+              <img src="./asset/globe.png" />
+              <div class="user">
+                <img id="menu" src="./asset/menu.png" />
+                <img src="./asset/Avatar.png" />
+              </div>
+            </div>
+          </nav>
+        </div>
+  
+        <div class="options abnMain ">
+          <button class="withIcons">Price <i class="fa-solid fa-angle-down" style="color: #050505;"></i> </button>
+          <button class="withIcons">Type of place <i class="fa-solid fa-angle-down" style="color: #050505;"></i>  </button>
+          <button>Free Cancellation</button>
+          <button>Wifi</button>
+          <button>Kitchen</button>
+          <button>Air Conditionning</button>
+          <button>Washer </button>
+          <button>Iron</button>
+          <button>Dedicated Workspace</button>
+          <button>Free parking</button>
+          <button>Dryer</button>
+          <button class="withIcons" > <img src="./asset/filter.png"> Filter</button>
+        </div>
+  
+        <div class="searchedSection abnMain " >
+          <div id="searchedRoom" class="searchedRoom">
+        
+            <!-- <div class="roomCard">
+            <div id="roomCardImage">
+              <img src="https://a0.muscache.com/im/pictures/miso/Hosting-39618986/original/db15bf2f-d52d-4216-852a-061cda928966.jpeg?im_w=720">
+            </div>
+            
+            <div class="roomCardInfo">
+              <div class="CardHeading">
+                <p>Tower of paris</p>
+                <i class="fa-solid fa-heart" style="color: #ea064a;"></i>
+              </div>
+              <h2>Paris</h2>
+          
+              <div class="horizontalLine"></div>
+              <div id ="anemities" class="anemities">
+               <p id="anemitiesPara">
+
+
+
+               </p>
+              </div>
+              <div class="horizontalLine"></div>
+
+             
+          
+              <div id="ratingSection">
+                <div id="leftRatingSection">
+                  <p>23</p>
+                  <i class="fa-solid fa-star" style="color: #eede2b;"></i>
+                  <p>(233 views)</p>
+          
+                </div>
+                <div>
+                  <p>$234/night</p>
+                </div>
+                 
+                <div class="cardButtons">
+                  <button id="costButton" class="costButton" onclick="showBookingCostBreakdown()">Cost Breakdown</button>
+
+                  
+                </div>
+
+                  
+              </div>
+
+              <div class="locationButton">
+                <button id="locationButton" onclick="openDirections()">Get Location</button>
+            </div> 
+
+             
+              
+          
+            </div>
+  
+            
+  
+             
+            
+          </div> 
+
+           <div class="outerHorizontalLine">
+
+          </div> -->
+
+         
+
+          
+
+          
+        </div> 
+
+        <div id="map">
+
+            
+        </div>
+          
+          
+         </div> 
+
+        
+      
+        </div>
+  
+      </div>
+      
+<script src="./search.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbQx7jzALJGF1bK3g4O20_6SIy0Yiywd0&callback=initMap" async defer></script>
+
+
+
+</body>
+</html> 
