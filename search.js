@@ -17,18 +17,18 @@ Guest.innerText = guest;
 // console.log(city.innerText,checkIn.innerText,checkOut.innerText,guest.innerText);
 
 async function getDummyData() {
-  // const url = `https://airbnb13.p.rapidapi.com/search-location?location=${city}&checkin=${checkIndate}&checkout=${checkOutdate}&adults=${guest}&children=0&infants=0&pets=0&page=1&currency=USD`;
-  // const options = {
-  //   method: "GET",
-  //   headers: {
-  //     "X-RapidAPI-Key": "013bb6931bmsh061041006257273p1c9d51jsne4087ba7b66e",
-  //     "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
-  //   },
-  // };
+  const url = `https://airbnb13.p.rapidapi.com/search-location?location=${city}&checkin=${checkIndate}&checkout=${checkOutdate}&adults=${guest}&children=0&infants=0&pets=0&page=1&currency=USD`;
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "013bb6931bmsh061041006257273p1c9d51jsne4087ba7b66e",
+      "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
+    },
+  };
 
   try {
-    // const response = await fetch(url, options);
-    const response = await fetch("./dummy.json");
+    const response = await fetch(url, options);
+    // const response = await fetch("./dummy.json");
     const result = await response.json();
     let data = result.results;
     console.log(data);
@@ -41,7 +41,7 @@ async function getDummyData() {
 document.addEventListener("DOMContentLoaded", function () {
   
   getDummyData();
-  // initMap();
+  initMap();
 });
 
 
